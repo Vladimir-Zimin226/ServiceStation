@@ -10,6 +10,7 @@ public class ServiceStation implements CheckingVehicles {
             car.checkEngine();
         }
     }
+
     @Override
     public void check(Truck truck) {
         if (truck != null) {
@@ -21,6 +22,7 @@ public class ServiceStation implements CheckingVehicles {
             truck.checkTrailer();
         }
     }
+
     @Override
     public void check(Bicycle bicycle) {
         if (bicycle != null) {
