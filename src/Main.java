@@ -16,6 +16,7 @@ public class Main {
                 shacman
         };
 
+
         ServiceStation station = new ServiceStation();
         for (Vehicle vehicle : vehicles) {
             station.check(vehicle);
