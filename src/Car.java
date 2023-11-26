@@ -1,16 +1,12 @@
-public class Car extends Vehicle implements CheckingEngines {
+public class Car extends Vehicle {
 
     public Car(String modelName, int wheelsCount) {
-        super(modelName, wheelsCount);
+        super(modelName, 4);
     }
 
     @Override
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    @Override
-    public void updateTyre() {
-        CheckingEngines.super.updateTyre();
+    public void service() {
+        super.service();
+        checkEngine();
     }
 }

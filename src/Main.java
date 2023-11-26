@@ -1,19 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car("car1", 4);
-        Car car2 = new Car("car2", 4);
+        Car toyota = new Car("Toyota", 4);
+        Vehicle mazda = new Car("Mazda", 4);
+        Vehicle specialized = new Bicycle("Specialized", 2);
+        Vehicle merida = new Bicycle("Merida", 2);
+        Vehicle kamaz = new Truck("Kamaz", 6);
+        Vehicle shacman = new Truck("Shacman", 8);
 
-        Truck truck = new Truck("truck1", 6);
-        Truck truck2 = new Truck("truck2", 8);
-
-
-        Bicycle bicycle = new Bicycle("bicycle1", 2);
-        Bicycle bicycle2 = new Bicycle("bicycle2", 2);
+        Vehicle[] vehicles = {
+                toyota,
+                mazda,
+                specialized,
+                merida,
+                kamaz,
+                shacman
+        };
 
         ServiceStation station = new ServiceStation();
-        station.check(bicycle2);
-        station.check(car2);
-        station.check(truck2);
-
+        for (Vehicle vehicle : vehicles) {
+            station.check(vehicle);
+        }
     }
 }
