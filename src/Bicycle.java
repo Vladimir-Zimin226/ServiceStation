@@ -1,6 +1,12 @@
-public class Bicycle extends Vehicle implements UpdatingTyres {
-       @Override
-       public void updateTyre() {
-              UpdatingTyres.super.updateTyre();
-       }
+public class Bicycle extends Vehicle {
+
+    public Bicycle(String modelName, int wheelsCount) {
+
+        super(modelName, 2);
+    }
+
+    @Override
+    public void service() {
+        super.service();
+    }
 }
